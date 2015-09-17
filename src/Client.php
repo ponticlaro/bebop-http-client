@@ -43,7 +43,7 @@ class Client {
     {
         // Throw error if there is no base URL
         if (!is_string($url))
-            throw new Exception("You must specify the base URL for all requests", 1);
+            throw new \Exception("You must specify the base URL for all requests", 1);
 
         // Store reference to base url
         $this->__url = $url;
@@ -222,7 +222,7 @@ class Client {
         $url = isset($args[0]) ? $args[0] : null;
 
         if (!$url)
-            throw new Exception("You must specify the target URL for this request", 1);
+            throw new \Exception("You must specify the target URL for this request", 1);
         
         // Set request method from called method method
         $args[1]           = $args[1] ?: array();
