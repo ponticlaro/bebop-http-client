@@ -67,9 +67,9 @@ class Client {
         );
 
         // Instantiate configuration collections
-        $this->__config  = new Collection($default_config)->disableDottedNotation();
-        $this->__headers = new Collection()->disableDottedNotation();
-        $this->__cookies = new Collection()->disableDottedNotation();
+        $this->__config  = (new Collection($default_config))->disableDottedNotation();
+        $this->__headers = (new Collection())->disableDottedNotation();
+        $this->__cookies = (new Collection())->disableDottedNotation();
     }
 
     /**
