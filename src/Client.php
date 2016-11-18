@@ -225,7 +225,7 @@ class Client {
             throw new \Exception("You must specify the target URL for this request", 1);
         
         // Set request method from called method method
-        $args[1]           = $args[1] ?: array();
+        $args[1]           = isset($args[1]) && $args[1] ?: array();
         $args[1]['method'] = strtoupper($method);
 
         // Make request and return response object
