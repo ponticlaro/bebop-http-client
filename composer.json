@@ -38,7 +38,7 @@
   },
   "support": {
     "email": "hello@ponticlaro.com",
-    "issues": "https://github.com/ponticlaro/bebop-common/issues",
+    "issues": "https://github.com/ponticlaro/bebop-http-client/issues",
     "forum": "https://gitter.im/ponticlaro/bebop"
   }
 }
